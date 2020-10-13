@@ -1,0 +1,29 @@
+.sotry {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeate;
+    width: 120px;
+    height: 200px;
+    box-shadow: 0px 0px 16px -1px rgba(0, 0, 0, 0.63);
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.sotry:hover {
+    transform: scale(1.07);
+}
+
+.story__avatar {
+    margin: 10px;
+    border: 5px solid #1876F2;
+}
+
+.sotry>h4 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
