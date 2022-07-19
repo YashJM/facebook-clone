@@ -9,7 +9,7 @@ import StorefrontIcon from "@material-ui/icons/Storefront";
 import OndemandVideoIcon from "@material-ui/icons/OndemandVideo";
 import EventAvailableIcon from "@material-ui/icons/EventAvailable";
 import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../../StateProvider";
 
 function Sidebar() {
   const [{ user }, dispatch] = useStateValue();

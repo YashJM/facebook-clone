@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import Header from "./Header";
-import Sidebar from "./Sidebar";
-import Feed from "./Feed";
-import Widgets from "./Widgets";
-import Login from "./Login";
+import Header from "./components/header/Header";
+import Sidebar from "./components/sidebar/Sidebar";
+import Feed from "./components/feed/Feed";
+import Widgets from "./components/widgets/Widgets";
+import Login from "./views/login/Login";
 import { useStateValue } from "./StateProvider";
 
 function App() {
@@ -18,7 +18,8 @@ function App() {
           <Header />
           <div className="app__body">
             <Sidebar />
-            <Feed /> <Widgets />
+            <Feed />
+            <Widgets />
           </div>
         </div>
       )}

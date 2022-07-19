@@ -1,7 +1,7 @@
 import { Avatar } from "@material-ui/core";
 import React from "react";
 import "./Widgets.css";
-import undraw_chatting_2yvo from "./undraw_chatting_2yvo.svg";
+import undraw_chatting_2yvo from "../../undraw_chatting_2yvo.svg";
 
 function Widgets() {
   return (

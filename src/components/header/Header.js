@@ -1,21 +1,9 @@
 import React from "react";
 import "./Header.css";
-import SearchIcon from "@material-ui/icons/Search";
-import HomeIcon from "@material-ui/icons/Home";
-import OndemandVideoIcon from "@material-ui/icons/OndemandVideo";
-import StorefrontIcon from "@material-ui/icons/Storefront";
-import GroupIcon from "@material-ui/icons/Group";
 
-import MenuIcon from "@material-ui/icons/Menu";
-import Avatar from "@material-ui/core/Avatar";
-import IconButton from "@material-ui/core/IconButton";
-
-import AddCircleRoundedIcon from "@material-ui/icons/AddCircleRounded";
-import ForumRoundedIcon from "@material-ui/icons/ForumRounded";
-import NotificationsRoundedIcon from "@material-ui/icons/NotificationsRounded";
-import ArrowDropDownCircleRoundedIcon from "@material-ui/icons/ArrowDropDownCircleRounded";
-
-import { useStateValue } from "./StateProvider";
+import { Search, Home, OndemandVideo, Storefront, Group, AddCircleRounded, ForumRounded, NotificationsRounded, ArrowDropDownCircleRounded } from "@material-ui/icons";
+import { Avatar, IconButton } from "@material-ui/core";
+import { useStateValue } from "../../StateProvider";
 
 function Header() {
   const [{ user }, dispatch] = useStateValue();
@@ -28,22 +16,22 @@ function Header() {
           alt="Facebook f logo (2019).svg"
         />
         <div className="header__input">
-          <SearchIcon />
+          <Search />
           <input placeholder="Search Facebook" type="text"></input>
         </div>
       </div>
       <div className="header__middle">
         <div className="header__option header__option--active">
-          <HomeIcon />
+          <Home />
         </div>
         <div className="header__option">
-          <OndemandVideoIcon />
+          <OndemandVideo />
         </div>
         <div className="header__option">
-          <StorefrontIcon />
+          <Storefront />
         </div>
         <div className="header__option">
-          <GroupIcon />
+          <Group />
         </div>
       </div>
 
@@ -53,16 +41,16 @@ function Header() {
           <h4>{user.displayName}</h4>
         </div>
         <IconButton>
-          <AddCircleRoundedIcon />
+          <AddCircleRounded />
         </IconButton>
         <IconButton>
-          <ForumRoundedIcon />
+          <ForumRounded />
         </IconButton>
         <IconButton>
-          <NotificationsRoundedIcon />
+          <NotificationsRounded />
         </IconButton>
         <IconButton>
-          <ArrowDropDownCircleRoundedIcon />
+          <ArrowDropDownCircleRounded />
         </IconButton>
       </div>
     </div>
